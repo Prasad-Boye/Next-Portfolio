@@ -1,0 +1,40 @@
+.course-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #171f46;
+  }
+  .time {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  .tag-items {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0px;
+  }
+  
+  .course-tag {
+    margin-right: 10px;
+    margin-top: 0px;
+    background-color: #1e293b20;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    color: #1e293b;
+    font-weight: bold;
+  }
+  .time-value {
+    margin-left: 5px;
+  }
+  
+  @media (max-width: 767px) {
+    .course-title {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
