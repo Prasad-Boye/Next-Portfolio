@@ -10,16 +10,16 @@ const ProjectTimelineCard = props => {
   return (
     <div className='p-2'>
       <Image src={imageUrl} alt="Project" width={300} height={200} className='rounded' />
-      <div className="project-title-duration mt-3">
+      <div className="mt-3">
         <h1 className='text-2xl font-bold mb-3'>{projectTitle}</h1>
-        <div className="project-duration flex items-center mb-3">
+        <div className="flex items-center mb-3">
           <AiFillCalendar />
-          <p className="duration-text ml-2">{duration}</p>
+          <p className="ml-2">{duration}</p>
         </div>
       </div>
-      <p className="description mb-3">{description}</p>
-      <Link href={projectUrl} target='_blank' className="text-lg project-link text-blue-600 content inline-block whitespace-nowrap">
-        <span className='flex items-center py-3 px-1'>Visit <BiRightArrowAlt className="arrow ml-1" /></span>
+      <p className="mb-3">{description}</p>
+      <Link href={projectUrl} target='_blank' className="text-lg text-blue-600 content inline-block whitespace-nowrap">
+        <span className='flex items-center py-3 px-1'>Visit <BiRightArrowAlt className="ml-1" /></span>
       </Link>
     </div>
   );

@@ -6,9 +6,9 @@ const CourseTimelineCard = props => {
   const {duration, courseTitle, description, tagsList} = details
   return (
     <div className='p-2'>
-      <div className="course-title">
+      <div>
         <h1 className='font-bold text-2xl mb-3'>{courseTitle}</h1>
-        <div className="time flex items-center mb-3">
+        <div className="flex items-center mb-3">
           <AiFillClockCircle />
           <p className="ml-2">{duration}</p>
         </div>
