@@ -43,7 +43,7 @@ const Navbar = () => {
                 <CustomLink href='/' title='Home' className='mr-4' />
                 <CustomLink href='/about' title='About' className='mx-4' />
                 <CustomLink href='/projects' title='Projects' className='mx-4' />
-                <CustomLink href='/articles' title='Articles' className='ml-4' />
+                <CustomLink href='/skills' title='Skills' className='ml-4' />
             </nav>
             <div className="flex flex-grow items-center">
                 <nav className='flex flex-grow items-center md:justify-end justify-start flex-wrap mr-auto'>
@@ -81,7 +81,7 @@ const Navbar = () => {
                                 <CustomLink href='/' title='Home' className='my-4 px-6' />
                                 <CustomLink href='/about' title='About' className='my-4 px-6' />
                                 <CustomLink href='/projects' title='Projects' className='my-4 px-6' />
-                                <CustomLink href='/articles' title='Articles' className='my-4 px-6' />
+                                <CustomLink href='/skills' title='Skills' className='my-4 px-6' />
                             </nav>
                         </div>
                     </div>

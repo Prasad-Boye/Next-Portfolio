@@ -283,4 +283,51 @@ export const timelineItemsList = [
       duration: '10 hr',
       projectUrl: 'https://prasadcovidapp.ccbp.tech/',
     },
+    {
+      id: 'e681e826-260c-4540-9ee5-f53d0e6ecba0',
+      categoryId: 'COURSE',
+      title: 'From 12-09-2022 - Present',
+      courseTitle: 'A new learing  journey with Next.js with an AI twist',
+      description:
+        'Building GRC products using Next.js & React.js. Learning the full potential of Material UI library for design and development. Fixing CI/CD pieplines for smooth flow of development. Realising the potential of AI in software Development',
+      duration: 'Since Forever',
+      tagsList: [
+        {
+          id: '94947ad2-f768-11eb-9a03-0242ac150003',
+          name: 'React Hooks',
+        },
+        {
+          id: '94947d52-f768-11eb-9a03-0242ac150003',
+          name: 'React Hook Forms',
+        },
+        {
+          id: '94947e4c-f768-11eb-9a03-0242ac150003',
+          name: 'MUI',
+        },
+        {
+          id: '94947f14-f768-11eb-9a03-0242ac150003',
+          name: 'Jenkins',
+        },
+        {
+          id: '94948270-f768-11eb-9a03-0242ac150003',
+          name: 'Jira',
+        },
+        {
+          id: '94948342-f768-11eb-9a03-0242ac150003',
+          name: 'Rest APIs',
+        },
+        {
+          id: '94948400-f768-11eb-9a03-0242ac150003',
+          name: 'Figma',
+        },
+        {
+          id: '94948400-f768-11eb-9a03-0242ac150003',
+          name: 'AI - ChatGPT, GIT Co-Pilot',
+        },
+        {
+          id: '94948400-f768-11eb-9a03-0242ac150003',
+          name: 'Prompt Engineering',
+        },
+      ],
+    },
   ]

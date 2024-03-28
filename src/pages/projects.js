@@ -3,6 +3,7 @@ import { Chrono } from 'react-chrono';
 import ProjectTimelineCard from '../components/ProjectTimelineCard';
 import CourseTimelineCard from '../components/CourseTimelineCard';
 import { timelineItemsList } from '../data';
+import HireMe from '@/components/HireMe';
 
 const TimelineView = () => {
   const [isClient, setIsClient] = useState(false);
@@ -37,6 +38,7 @@ const TimelineView = () => {
           </Chrono>
         )}
       </div>
+      <HireMe/>
     </div>
   );
 };

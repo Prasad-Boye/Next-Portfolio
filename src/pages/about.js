@@ -3,6 +3,7 @@ import Head from 'next/head'
 import AnimatedText from '@/components/AnimatedText'
 import { AboutMe, Calender, Developer, Engineer, Office } from '@/components/icons'
 import Layout from '@/components/Layout'
+import HireMe from '@/components/HireMe'
 
 const about = () => {
   return (
@@ -16,7 +17,7 @@ const about = () => {
           <main>
             <AnimatedText text={'Adaptable Software Developer: Mastering Dynamic Challenges'}/>    
           </main>
-          <p className='mt-8 mb-3 text-justify font-semibold text-base'>Hey there, I&apos;m <strong>Prasad Boye</strong>, a Mechanical Engineering graduate who found his passion in software development. With over <strong>2 years</strong> of hands-on experience in <strong>software development</strong> and <strong>3 years</strong> in <strong>design and development</strong>, I&apos;ve journeyed from designing rail simulators to coding robust software solutions.</p>
+          <p className='mt-8 mb-3 text-justify font-semibold text-base'>Hey there, I&apos;m <strong>Prasad Boye</strong>, a space enthusiast who found his passion in software development. With over <strong>2 years</strong> of hands-on experience in <strong>software development</strong> and <strong>3 years</strong> in <strong>design and development</strong>, I&apos;ve journeyed from designing rail simulators to coding robust software solutions.</p>
           <p className='mb-3 text-justify font-semibold'>Starting as a Design Engineer, I quickly rose to the role of Senior Design Engineer within one and a half year, showcasing not just technical prowess but also adaptability in challenging scenarios. However, I soon realized the immense potential of software development and made a deliberate shift in my career trajectory.</p>
           <p className='mb-3 text-justify font-semibold'>Transitioning into software development, I&apos;ve honed my skills while completing a comprehensive certification course in MERN stack development. Currently, I thrive as a software developer at MetricStream, where I contribute my expertise in tools like Next.js, React.js, Node.js, and more to develop cutting-edge GRC tools.</p>
           <p className='text-justify mb-3 font-semibold'>With a strong foundation in engineering principles complemented by practical software development experience, I&apos;m poised to tackle complex challenges and make meaningful contributions to any project or team. Let&apos;s connect and create something amazing together!</p>
@@ -44,7 +45,6 @@ const about = () => {
             </div>
             <div className="md:flex-grow">
               <div className="mx-autop-6 rounded-md">
-                {/* Frontend Development Focus */}
                 <div className="mb-8">
                   <h2 className="text-lg font-bold mb-2 text-gray-700">Frontend Development Focus</h2>
                   <ul className="list-disc pl-6">
@@ -54,7 +54,6 @@ const about = () => {
                   </ul>
                 </div>
 
-                {/* Contribution and Achievements */}
                 <div className="mb-8">
                   <h2 className="text-lg font-bold mb-2 text-gray-700">Contribution and Achievements</h2>
                   <ul className="list-disc pl-6">
@@ -63,7 +62,6 @@ const about = () => {
                   </ul>
                 </div>
 
-                {/* Quality Assurance */}
                 <div className="mb-8">
                   <h2 className="text-lg font-bold mb-2 text-gray-700">Quality Assurance</h2>
                   <ul className="list-disc pl-6">
@@ -72,7 +70,6 @@ const about = () => {
                   </ul>
                 </div>
 
-                {/* Technology Stack */}
                 <div className="mb-8">
                   <h2 className="text-lg font-bold mb-2 text-gray-700">Technology Stack</h2>
                   <ul className="list-disc pl-6">
@@ -81,7 +78,6 @@ const about = () => {
                   </ul>
                 </div>
 
-                {/* Issue Tracking and Management */}
                 <div className="mb-8">
                   <h2 className="text-lg font-bold mb-2 text-gray-700">Issue Tracking and Management</h2>
                   <ul className="list-disc pl-6">
@@ -89,7 +85,6 @@ const about = () => {
                   </ul>
                 </div>
 
-                {/* Version Control */}
                 <div className="mb-8">
                   <h2 className="text-lg font-bold mb-2 text-gray-700">Version Control</h2>
                   <ul className="list-disc pl-6">
@@ -97,7 +92,6 @@ const about = () => {
                   </ul>
                 </div>
 
-                {/* Continuous Integration/Continuous Deployment (CI/CD) */}
                 <div className="mb-8">
                   <h2 className="text-lg font-bold mb-2 text-gray-700">Continuous Integration/Continuous Deployment (CI/CD)</h2>
                   <ul className="list-disc pl-6">
@@ -124,7 +118,6 @@ const about = () => {
             </div>
             <div className="md:flex-grow">
               <div className="mx-autop-6 rounded-md">
-                {/* Expertise in SolidWorks */}
                 <div className="mb-8">
                   <h2 className="text-lg font-bold mb-2 text-gray-700">Expertise in Design</h2>
                   <ul className="list-disc pl-6">
@@ -133,7 +126,6 @@ const about = () => {
                   </ul>
                 </div>
 
-                {/* Projects */}
                 <div className="mb-8">
                   <h2 className="text-lg font-bold mb-2 text-gray-700">Projects</h2>
                   <ul className="list-disc pl-6">
@@ -142,7 +134,6 @@ const about = () => {
                   </ul>
                 </div>
 
-                {/* Interaction with Vendors and Clients */}
                 <div className="mb-8">
                   <h2 className="text-lg font-bold mb-2 text-gray-700">Interaction with Vendors and Clients</h2>
                   <ul className="list-disc pl-6">
@@ -151,7 +142,6 @@ const about = () => {
                   </ul>
                 </div>
 
-                {/* Bill of Materials (BOM) */}
                 <div className="mb-8">
                   <h2 className="text-lg font-bold mb-2 text-gray-700">Bill of Materials (BOM)</h2>
                   <ul className="list-disc pl-6">
@@ -160,7 +150,7 @@ const about = () => {
                   </ul>
                 </div>
 
-                {/* Production Oversight */}
+
                 <div className="mb-8">
                   <h2 className="text-lg font-bold mb-2 text-gray-700">Production Oversight</h2>
                   <ul className="list-disc pl-6">
@@ -174,6 +164,7 @@ const about = () => {
           </div>
         </div>
       </div>
+      <HireMe />
     </Layout>
     </>
   )

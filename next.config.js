@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['assets.ccbp.in','dummyimage.com','postimg.cc','i.postimg.cc'],
+    domains: ['assets.ccbp.in','postimg.cc','i.postimg.cc'],
 
   },
 }
