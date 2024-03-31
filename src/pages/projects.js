@@ -38,7 +38,6 @@ const TimelineView = () => {
           </Chrono>
         )}
       </div>
-      <HireMe/>
     </div>
   );
 };

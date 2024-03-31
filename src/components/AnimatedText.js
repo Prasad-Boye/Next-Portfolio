@@ -34,7 +34,7 @@ const AnimatedText = ({ text, className = '' }) => {
       <motion.h1 variants={quote}
         initial='initial'
         animate='animate'
-        className=" capitalizes text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl"
+        className=" capitalizes text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl"
       >
         {text.split('').map((char, i) => (
           <motion.span key={`${char}-${i}`} className={`${className}`}

@@ -104,7 +104,7 @@ export const GitHubIcon = ({className, ...rest}) => (
 
   export const CircularText = ({className, ...rest}) => (
     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-    className={`w-full h-auto ${className}`}
+    className={`w-auto h-auto ${className}`}
     {...rest}
     width="810.000000pt" height="810.000000pt" viewBox="0 0 810.000000 810.000000"
     preserveAspectRatio="xMidYMid meet">

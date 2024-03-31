@@ -14,13 +14,12 @@ import cssLogo from '../../public/images/articles/CSS3_Logo.png'
 import sqlLogo from '../../public/images/articles/SQL_Logo.png'
 import swLogo from '../../public/images/articles/solidworks_logo.png'
 import { motion } from 'framer-motion';
-import HireMe from '@/components/HireMe'
 
 function skills() {
   return (
     <Layout>
         <section className="text-gray-400 bg-gray-900 body-font rounded-lg">
-        <div className="container px-5 py-24 mx-auto">
+        <div className="container sm:px-2 py-24 mx-auto">
             <div className="flex flex-col text-center w-full mb-20">
                 <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Areas of Expertise</h1>
                 <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
@@ -28,15 +27,15 @@ function skills() {
                 </p>
             </div>
             <p className="px-8 leading-relaxed text-white text-sm">
-                *Hover On Items below to see the magic
+                *Touch/Tap on Items below to see the details
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4">
-                <motion.div className="p-4"
+                <motion.div className="p-4 h-full"
                 whileHover={{ y: -8 }}
                 whileTap={{ scale: 0.9 }}>
-                    <div className="flex relative min-h-80">
+                    <div className="flex relative min-h-80 h-full">
                         <div className="flex justify-center items-center bg-light absolute inset-0 w-full h-full object-fit object-center rounded-lg">
-                            <Image width={300} height={200} className="bg-light h-full object-center p-8 sm:p-4 rounded-lg" alt="gallery" src={jslogo} />
+                            <Image width={300} height={200} className="bg-light aspect-w-16 aspect-h-9 max-h-1/2 object-center p-20 rounded-lg" alt="gallery" src={jslogo} />
                         </div>
                         <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
                             <h2 className="tracking-widest text-lg title-font font-medium text-indigo-400 mb-1">JavaScript</h2>
@@ -44,12 +43,12 @@ function skills() {
                         </div>
                     </div>
                 </motion.div>
-                <motion.div className="p-4"
+                <motion.div className="p-4 h-full"
                 whileHover={{ y: -8 }}
                 whileTap={{ scale: 0.9 }}>
-                    <div className="flex relative min-h-80">
+                    <div className="flex relative min-h-80 h-full">
                         <div className="flex justify-center items-center bg-light absolute inset-0 w-full h-full object-fit object-center rounded-lg">
-                            <Image width={300} height={200} className="bg-light h-full object-center p-8 sm:p-4 rounded-lg" alt="gallery" src={reactLogo} />
+                            <Image width={300} height={200} className="bg-light aspect-w-16 aspect-h-9 max-h-1/2 object-center p-8 sm:p-4 rounded-lg" alt="gallery" src={reactLogo} />
                         </div>
                         <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
                             <h2 className="tracking-widest text-lg title-font font-medium text-indigo-400 mb-1">React JS</h2>
@@ -57,12 +56,12 @@ function skills() {
                         </div>
                     </div>
                 </motion.div>
-                <motion.div className="p-4"
+                <motion.div className="p-4 h-full"
                 whileHover={{ y: -8 }}
                 whileTap={{ scale: 0.9 }}>
-                    <div className="flex relative min-h-80">
+                    <div className="flex relative min-h-80 h-full">
                         <div className="flex justify-center items-center bg-light absolute inset-0 w-full h-full object-fit object-center rounded-lg">
-                            <Image width={300} height={200} className="bg-light h-full object-center p-8 sm:p-4 rounded-lg" alt="gallery" src={nextLogo} />
+                            <Image width={300} height={200} className="bg-light aspect-w-16 aspect-h-9 max-h-1/2 object-center p-8 sm:p-4 rounded-lg" alt="gallery" src={nextLogo} />
                         </div>
                         <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
                             <h2 className="tracking-widest text-lg title-font font-medium text-indigo-400 mb-1">Next JS</h2>
@@ -70,12 +69,12 @@ function skills() {
                         </div>
                     </div>
                 </motion.div>
-                <motion.div className="p-4"
+                <motion.div className="p-4 h-full"
                 whileHover={{ y: -8 }}
                 whileTap={{ scale: 0.9 }}>
-                    <div className="flex relative min-h-80">
+                    <div className="flex relative min-h-80 h-full">
                         <div className="flex justify-center items-center bg-light absolute inset-0 w-full h-full object-fit object-center rounded-lg">
-                            <Image width={300} height={200} className="bg-light h-full object-center p-8 sm:p-4 rounded-lg" alt="gallery" src={nodeLogo} />
+                            <Image width={300} height={200} className="bg-light aspect-w-16 aspect-h-9 max-h-1/2 object-center p-8 sm:p-4 rounded-lg" alt="gallery" src={nodeLogo} />
                         </div>
                         <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
                             <h2 className="tracking-widest text-lg title-font font-medium text-indigo-400 mb-1">Node JS</h2>
@@ -83,12 +82,12 @@ function skills() {
                         </div>
                     </div>
                 </motion.div>
-                <motion.div className="p-4"
+                <motion.div className="p-4 h-full"
                 whileHover={{ y: -8 }}
                 whileTap={{ scale: 0.9 }}>
-                    <div className="flex relative min-h-80">
+                    <div className="flex relative min-h-80 h-full">
                         <div className="flex justify-center items-center bg-light absolute inset-0 w-full h-full object-fit object-center rounded-lg">
-                            <Image width={300} height={200} className="bg-light h-full object-center p-8 sm:p-4 rounded-lg" alt="gallery" src={pythonLogo} />
+                            <Image width={300} height={200} className="bg-light aspect-w-16 aspect-h-9 max-h-1/2 object-center p-12 rounded-lg" alt="gallery" src={pythonLogo} />
                         </div>
                         <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
                             <h2 className="tracking-widest text-lg title-font font-medium text-indigo-400 mb-1">Python</h2>
@@ -96,12 +95,12 @@ function skills() {
                         </div>
                     </div>
                 </motion.div>
-                <motion.div className="p-4"
+                <motion.div className="p-4 h-full"
                 whileHover={{ y: -8 }}
                 whileTap={{ scale: 0.9 }}>
-                    <div className="flex relative min-h-80">
+                    <div className="flex relative min-h-80 h-full">
                         <div className="flex justify-center items-center bg-light absolute inset-0 w-full h-full object-fit object-center rounded-lg">
-                            <Image width={300} height={200} className="bg-light h-full object-center p-8 sm:p-4 rounded-lg" alt="gallery" src={bootstrapLogo} />
+                            <Image width={300} height={200} className="bg-light aspect-w-16 aspect-h-9 max-h-1/2 object-center p-20 rounded-lg" alt="gallery" src={bootstrapLogo} />
                         </div>
                         <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
                             <h2 className="tracking-widest text-lg title-font font-medium text-indigo-400 mb-1">Bootstrap</h2>
@@ -109,12 +108,12 @@ function skills() {
                         </div>
                     </div>
                 </motion.div>
-                <motion.div className="p-4"
+                <motion.div className="p-4 h-full"
                 whileHover={{ y: -8 }}
                 whileTap={{ scale: 0.9 }}>
-                    <div className="flex relative min-h-80">
+                    <div className="flex relative min-h-80 h-full">
                         <div className="flex justify-center items-center bg-light absolute inset-0 w-full h-full object-fit object-center rounded-lg">
-                            <Image width={300} height={200} className="bg-light h-full object-center p-8 sm:p-4 rounded-lg" alt="gallery" src={tailwindLogo} />
+                            <Image width={300} height={200} className="bg-light aspect-w-16 aspect-h-9 max-h-1/2 object-center p-20 rounded-lg" alt="gallery" src={tailwindLogo} />
                         </div>
                         <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
                             <h2 className="tracking-widest text-lg title-font font-medium text-indigo-400 mb-1">Tailwind CSS</h2>
@@ -122,12 +121,12 @@ function skills() {
                         </div>
                     </div>
                 </motion.div>
-                <motion.div className="p-4"
+                <motion.div className="p-4 h-full"
                 whileHover={{ y: -8 }}
                 whileTap={{ scale: 0.9 }}>
-                    <div className="flex relative min-h-80">
+                    <div className="flex relative min-h-80 h-full">
                         <div className="flex justify-center items-center bg-light absolute inset-0 w-full h-full object-fit object-center rounded-lg">
-                            <Image width={300} height={200} className="bg-light h-full object-center p-8 sm:p-4 rounded-lg" alt="gallery" src={muiLogo} />
+                            <Image width={300} height={200} className="bg-light aspect-w-16 aspect-h-9 max-h-1/2 object-center p-20 rounded-lg" alt="gallery" src={muiLogo} />
                         </div>
                         <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
                             <h2 className="tracking-widest text-lg title-font font-medium text-indigo-400 mb-1">Material-UI (MUI)</h2>
@@ -135,12 +134,12 @@ function skills() {
                         </div>
                     </div>
                 </motion.div>
-                <motion.div className="p-4"
+                <motion.div className="p-4 h-full"
                 whileHover={{ y: -8 }}
                 whileTap={{ scale: 0.9 }}>
-                    <div className="flex relative min-h-80">
+                    <div className="flex relative min-h-80 h-full">
                         <div className="flex justify-center items-center bg-light absolute inset-0 w-full h-full object-fit object-center rounded-lg">
-                            <Image width={300} height={200} className="bg-light h-full object-center p-8 sm:p-4 rounded-lg" alt="gallery" src={htmlLogo} />
+                            <Image width={300} height={200} className="bg-light aspect-w-4 aspect-h-3 max-h-1/2 object-center p-20 rounded-lg" alt="gallery" src={htmlLogo} />
                         </div>
                         <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
                             <h2 className="tracking-widest text-lg title-font font-medium text-indigo-400 mb-1">HTML5</h2>
@@ -148,12 +147,12 @@ function skills() {
                         </div>
                     </div>
                 </motion.div>
-                <motion.div className="p-4"
+                <motion.div className="p-4 h-full"
                 whileHover={{ y: -8 }}
                 whileTap={{ scale: 0.9 }}>
-                    <div className="flex relative min-h-80">
+                    <div className="flex relative min-h-80 h-full">
                         <div className="flex justify-center items-center bg-light absolute inset-0 w-full h-full object-fit object-center rounded-lg">
-                            <Image width={300} height={200} className="bg-light h-full object-center p-8 sm:p-4 rounded-lg" alt="gallery" src={cssLogo} />
+                            <Image width={300} height={200} className="bg-light aspect-w-16 aspect-h-9 max-h-1/2 object-center p-8 sm:p-4 rounded-lg" alt="gallery" src={cssLogo} />
                         </div>
                         <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
                             <h2 className="tracking-widest text-lg title-font font-medium text-indigo-400 mb-1">CSS3</h2>
@@ -161,12 +160,12 @@ function skills() {
                         </div>
                     </div>
                 </motion.div>
-                <motion.div className="p-4"
+                <motion.div className="p-4 h-full"
                 whileHover={{ y: -8 }}
                 whileTap={{ scale: 0.9 }}>
-                    <div className="flex relative min-h-80">
+                    <div className="flex relative min-h-80 h-full">
                         <div className="flex justify-center items-center bg-light absolute inset-0 w-full h-full object-fit object-center rounded-lg">
-                            <Image width={300} height={200} className="bg-light h-full object-center p-8 sm:p-4 rounded-lg" alt="gallery" src={sqlLogo} />
+                            <Image width={300} height={200} className="bg-light aspect-w-16 aspect-h-9 max-h-1/2 object-center p-16 rounded-lg" alt="gallery" src={sqlLogo} />
                         </div>
                         <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
                         <h2 className="tracking-widest text-lg title-font font-medium text-indigo-400 mb-1">SQL</h2>
@@ -174,12 +173,12 @@ function skills() {
                         </div>
                     </div>
                 </motion.div>
-                <motion.div className="p-4"
+                <motion.div className="p-4 h-full"
                 whileHover={{ y: -8 }}
                 whileTap={{ scale: 0.9 }}>
-                    <div className="flex relative min-h-80">
+                    <div className="flex relative min-h-80 h-full">
                         <div className="flex justify-center items-center bg-light absolute inset-0 w-full h-full object-fit object-center rounded-lg">
-                            <Image width={300} height={200} className="bg-light h-full object-center p-8 sm:p-4 rounded-lg" alt="gallery" src={swLogo} />
+                            <Image width={300} height={200} className="bg-light aspect-w-16 aspect-h-9 max-h-1/2 object-center p-8 sm:p-4 rounded-lg" alt="gallery" src={swLogo} />
                         </div>
                         <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
                             <h2 className="tracking-widest text-lg title-font font-medium text-indigo-400 mb-1">Solidworks</h2>
@@ -190,7 +189,6 @@ function skills() {
             </div>
         </div>
         </section>
-        <HireMe/>
     </Layout>
   )
 }

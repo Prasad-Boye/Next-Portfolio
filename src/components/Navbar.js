@@ -46,7 +46,7 @@ const Navbar = () => {
                 <CustomLink href='/skills' title='Skills' className='ml-4' />
             </nav>
             <div className="flex flex-grow items-center">
-                <nav className='flex flex-grow items-center md:justify-end justify-start flex-wrap mr-auto'>
+                <nav className='hidden flex-grow items-center md:flex  md:justify-end justify-start flex-wrap mr-auto'>
                     <motion.a href='https://twitter.com/prasad_boya' target='_blank' className={'mr-3 w-5 md:w-7'}
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}>
@@ -68,15 +68,40 @@ const Navbar = () => {
                         <PinterestIcon />
                     </motion.a>
                 </nav>
-                <button onClick={toggleMenu} className="md:hidden text-gray-800 focus:outline-none"> {/* Removed ml-auto */}
-                    {!menuOpen && <HamburgerIcon />}
+                <button onClick={toggleMenu} className="md:hidden text-gray-800 focus:outline-none ml-auto">
+                    <HamburgerIcon />
                 </button>
                 {menuOpen && (
                     <div className="fixed inset-0 bg-gray-800 bg-opacity-75 z-50 flex justify-end">
                         <div className="bg-white w-64 h-full flex flex-col items-start justify-start pt-16">
-                            <button onClick={toggleMenu} className="absolute top-4 right-4 text-gray-800 focus:outline-none">
-                                <CloseIcon />
-                            </button>
+                            <div className='flex items-center absolute top-4 right-4' >
+                                <nav className='flex flex-grow items-center md:hidden mr-10 md:justify-end justify-start flex-wrap'>
+                                    <motion.a href='https://twitter.com/prasad_boya' target='_blank' className={'mr-3 w-5 md:w-7'}
+                                        whileHover={{ y: -2 }}
+                                        whileTap={{ scale: 0.9 }}>
+                                        <TwitterIcon />
+                                    </motion.a>
+                                    <motion.a href='https://www.linkedin.com/in/prasad-boye/' target='_blank' className={'mx-3 w-5 md:w-7'}
+                                        whileHover={{ y: -2 }}
+                                        whileTap={{ scale: 0.9 }}>
+                                        <LinkedinIcon />
+                                    </motion.a>
+                                    <motion.a href='https://github.com/Prasad-Boye' target='_blank' className={'mx-3 w-5 md:w-7'}
+                                        whileHover={{ y: -2 }}
+                                        whileTap={{ scale: 0.9 }}>
+                                        <GitHubIcon />
+                                    </motion.a>
+                                    <motion.a href='https://in.pinterest.com/prasad_boye/' target='_blank' className={'ml-3 w-5 md:w-7'}
+                                        whileHover={{ y: -2 }}
+                                        whileTap={{ scale: 0.9 }}>
+                                        <PinterestIcon />
+                                    </motion.a>
+                                </nav>
+                                <button onClick={toggleMenu} className=" text-gray-800 focus:outline-none">
+                                    <CloseIcon />
+                                </button>
+                            </div>
+
                             <nav className="flex flex-col items-start w-full">
                                 <CustomLink href='/' title='Home' className='my-4 px-6' />
                                 <CustomLink href='/about' title='About' className='my-4 px-6' />

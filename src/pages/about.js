@@ -1,9 +1,10 @@
 import React from 'react'
 import Head from 'next/head'
 import AnimatedText from '@/components/AnimatedText'
-import { AboutMe, Calender, Developer, Engineer, Office } from '@/components/icons'
+import { Calender, Developer, Engineer, Office } from '@/components/icons'
+import coder from '../../public/images/profile/coder.png'
 import Layout from '@/components/Layout'
-import HireMe from '@/components/HireMe'
+import Image from 'next/image'
 
 const about = () => {
   return (
@@ -12,8 +13,8 @@ const about = () => {
       <title>Prasad Boye | About Me</title>
       <meta name="description" content="Any Description" />
     </Head>
-    <Layout className='flex flex-col lg:flex-row mb-0 items-center'>
-      <div className='lg:w-2/3 md:mr-3'>
+    <Layout className='flex flex-col lg:flex-col xl:flex-row mb-0 items-center'>
+      <div className='md:mr-3'>
           <main>
             <AnimatedText text={'Adaptable Software Developer: Mastering Dynamic Challenges'}/>    
           </main>
@@ -22,7 +23,7 @@ const about = () => {
           <p className='mb-3 text-justify font-semibold'>Transitioning into software development, I&apos;ve honed my skills while completing a comprehensive certification course in MERN stack development. Currently, I thrive as a software developer at MetricStream, where I contribute my expertise in tools like Next.js, React.js, Node.js, and more to develop cutting-edge GRC tools.</p>
           <p className='text-justify mb-3 font-semibold'>With a strong foundation in engineering principles complemented by practical software development experience, I&apos;m poised to tackle complex challenges and make meaningful contributions to any project or team. Let&apos;s connect and create something amazing together!</p>
       </div>
-      <AboutMe className={'w-3/5 lg:w-3/5 ml-4 hidden md:block'}/>
+      <Image width={600} height={350} alt='coder' src={coder}/>
     </Layout>
     <Layout >
       <h1 className='text-4xl font-bold pt-16'>Professional Experience:</h1>
@@ -164,7 +165,6 @@ const about = () => {
           </div>
         </div>
       </div>
-      <HireMe />
     </Layout>
     </>
   )
