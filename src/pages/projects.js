@@ -17,8 +17,13 @@ const TimelineView = () => {
       <div className="text-center">
         <h1 className="text-3xl font-bold my-8">MY JOURNEY SO FAR</h1>
         {isClient && (
-          <Chrono mode="VERTICAL_ALTERNATING" 
+          <Chrono
+          mode="VERTICAL_ALTERNATING" 
           items={timelineItemsList}
+          enableLayoutSwitch={false}
+          enableQuickJump={false}
+          highlightCardsOnHover={true}
+          disableToolbar={true}
           cardHeight={"100%"}
           theme={{
             primary: 'black',
