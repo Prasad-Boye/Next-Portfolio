@@ -5,20 +5,26 @@ import { motion } from 'framer-motion';
 import Logo from './Logo';
 import { TwitterIcon, PinterestIcon, GitHubIcon, LinkedinIcon, HamburgerIcon, CloseIcon } from './icons';
 
-const CustomLink = ({ href, title, className = "" }) => {
+const CustomLink = ({ href, title, className = "" , highlight}) => {
     const router = useRouter();
     return (
-        <Link href={href} className={`${className} relative group`}>
-            {title}
-            <span className={
-                `h-[1px] inline-block bg-dark
-                absolute left-0 -bottom-0.5
-                group-hover:w-full transition-[width] ease duration-300
-                ${router.asPath === href ? 'w-full' : 'w-0'}
-                `
+        <>
+            {highlight ? <Link href={href} className={`${className} relative group`}>
+                {title}
+                <span className={
+                    `h-[1px] inline-block bg-dark
+                    absolute left-0 -bottom-0.5
+                    group-hover:w-full transition-[width] ease duration-300
+                    ${router.asPath === href ? 'w-full' : 'w-0'}
+                    `
+                }
+                >&nbsp;</span>
+            </Link> :
+            <Link href={href} className={`${className} relative group w-full ${router.asPath === href ? 'bg-dark p-2 text-light' : 'w-0'}`}>
+                {title}
+            </Link>
             }
-            >&nbsp;</span>
-        </Link>
+        </>
     );
 };
 
@@ -40,10 +46,10 @@ const Navbar = () => {
     return (
         <header className='w-full px-8 lg:px-32 shadow py-8 font-medium flex justify-between md:items-between relative'>
             <nav className='hidden md:flex items-center justify-start'>
-                <CustomLink href='/' title='Home' className='mr-4' />
-                <CustomLink href='/about' title='About' className='mx-4' />
-                <CustomLink href='/projects' title='Projects' className='mx-4' />
-                <CustomLink href='/skills' title='Skills' className='ml-4' />
+                <CustomLink href='/' title='Home' className='mr-4' highlight={true}/>
+                <CustomLink href='/about' title='About' className='mx-4' highlight={true}/>
+                <CustomLink href='/projects' title='Projects' className='mx-4' highlight={true}/>
+                <CustomLink href='/skills' title='Skills' className='ml-4' highlight={true}/>
             </nav>
             <div className="flex flex-grow items-center">
                 <nav className='hidden flex-grow items-center md:flex  md:justify-end justify-start flex-wrap mr-auto'>
@@ -103,10 +109,10 @@ const Navbar = () => {
                             </div>
 
                             <nav className="flex flex-col items-start w-full">
-                                <CustomLink href='/' title='Home' className='my-4 px-6' />
-                                <CustomLink href='/about' title='About' className='my-4 px-6' />
-                                <CustomLink href='/projects' title='Projects' className='my-4 px-6' />
-                                <CustomLink href='/skills' title='Skills' className='my-4 px-6' />
+                                <CustomLink href='/' title='Home' className='my-4 px-6' highlight={false} />
+                                <CustomLink href='/about' title='About' className='my-4 px-6' highlight={false}/>
+                                <CustomLink href='/projects' title='Projects' className='my-4 px-6' highlight={false} />
+                                <CustomLink href='/skills' title='Skills' className='my-4 px-6' highlight={false}/>
                             </nav>
                         </div>
                     </div>

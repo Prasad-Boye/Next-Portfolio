@@ -1,10 +1,21 @@
 import React from 'react'
 import Head from 'next/head'
 import AnimatedText from '@/components/AnimatedText'
+import Lottie from 'react-lottie';
+import aboutMe from '../../public/images/Animations/About.json'
 import { Calender, Developer, Engineer, Office } from '@/components/icons'
-import coder from '../../public/images/profile/coder.png'
+// import coder from '../../public/images/profile/coder.png'
 import Layout from '@/components/Layout'
 import Image from 'next/image'
+
+const defaultOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: aboutMe,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice"
+  }
+};
 
 const about = () => {
   return (
@@ -23,7 +34,10 @@ const about = () => {
           <p className='mb-3 text-justify font-semibold'>Transitioning into software development, I&apos;ve honed my skills while completing a comprehensive certification course in MERN stack development. Currently, I thrive as a software developer at MetricStream, where I contribute my expertise in tools like Next.js, React.js, Node.js, and more to develop cutting-edge GRC tools.</p>
           <p className='text-justify mb-3 font-semibold'>With a strong foundation in engineering principles complemented by practical software development experience, I&apos;m poised to tackle complex challenges and make meaningful contributions to any project or team. Let&apos;s connect and create something amazing together!</p>
       </div>
-      <Image width={600} height={350} alt='coder' src={coder}/>
+      {/* <Image width={600} height={350} alt='coder' src={coder}/> */}
+      <Lottie 
+          options={defaultOptions}
+        />
     </Layout>
     <Layout >
       <h1 className='text-4xl font-bold pt-16'>Professional Experience:</h1>

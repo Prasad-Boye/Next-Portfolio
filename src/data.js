@@ -290,7 +290,7 @@ export const timelineItemsList = [
       courseTitle: 'A new learing  journey with Next.js with an AI twist',
       description:
         'Building GRC products using Next.js & React.js. Learning the full potential of Material UI library for design and development. Fixing CI/CD pieplines for smooth flow of development. Realising the potential of AI in software Development',
-      duration: 'Since Forever',
+      duration: 'Since 2022',
       tagsList: [
         {
           id: '94947ad2-f768-11eb-9a03-0242ac150003',
