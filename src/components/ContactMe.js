@@ -8,7 +8,7 @@ import emailjs from '@emailjs/browser';
 
 const ContactMe = forwardRef((props, _ref) => {
   const form = useRef();
-  const [sentStatus, setSendStatus] = useState('Sent');
+  const [sentStatus, setSendStatus] = useState('Send');
   const [showRequiredFields, setShowRequiredFields] = useState(false);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
