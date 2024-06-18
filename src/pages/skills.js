@@ -13,6 +13,9 @@ import htmlLogo from '../../public/images/articles/HTMLLogo.png'
 import cssLogo from '../../public/images/articles/CSS3_Logo.png'
 import sqlLogo from '../../public/images/articles/SQL_Logo.png'
 import swLogo from '../../public/images/articles/solidworks_logo.png'
+import jenkins from '../../public/images/articles/jenkins.png'
+import jira from '../../public/images/articles/jira.png'
+import vscode from '../../public/images/articles/vscode.png'
 import { motion } from 'framer-motion';
 
 function skills() {
@@ -170,6 +173,63 @@ function skills() {
                         <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
                         <h2 className="tracking-widest text-lg title-font font-medium text-indigo-400 mb-1">SQL</h2>
                     <p className="leading-relaxed">Structured Query Language (SQL) is a powerful domain-specific language used for managing and manipulating relational databases, facilitating data handling tasks such as retrieval, insertion, updating, and deletion of objects from tables.</p>
+                        </div>
+                    </div>
+                </motion.div>
+                <motion.div className="p-4 h-full"
+                whileHover={{ y: -8 }}
+                whileTap={{ scale: 0.9 }}>
+                    <div className="flex relative min-h-80 h-full">
+                        <div className="flex justify-center items-center bg-light absolute inset-0 w-full h-full object-fit object-center rounded-lg overflow-hidden">
+                            <Image 
+                                width={300} 
+                                height={200} 
+                                className="bg-light aspect-w-4 aspect-h-2 max-h-full object-center p-20 rounded-lg" 
+                                alt="gallery" 
+                                src={jenkins} 
+                            />
+                         </div>
+                        <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                            <h2 className="tracking-widest text-lg title-font font-medium text-indigo-400 mb-1">Jenkins</h2>
+                            <p className="leading-relaxed">Jenkins is an open-source automation server that facilitates continuous integration and continuous delivery (CI/CD) in software development. It automates the building, testing, and deployment of applications, enhancing efficiency and reliability. Jenkins extensive plugin ecosystem allows seamless integration with various tools, making it a versatile choice for managing CI/CD pipelines.</p>
+                        </div>
+                    </div>
+                </motion.div>
+                <motion.div className="p-4 h-full"
+                whileHover={{ y: -8 }}
+                whileTap={{ scale: 0.9 }}>
+                    <div className="flex relative min-h-80 h-full">
+                        <div className="flex justify-center items-center bg-light absolute inset-0 w-full h-full object-fit object-center rounded-lg overflow-hidden">
+                            <Image 
+                                width={300} 
+                                height={200} 
+                                className="bg-light aspect-w-4 aspect-h-2 max-h-full object-center p-20 rounded-lg" 
+                                alt="gallery" 
+                                src={jira} 
+                            />
+                         </div>
+                        <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                            <h2 className="tracking-widest text-lg title-font font-medium text-indigo-400 mb-1">Jira</h2>
+                            <p className="leading-relaxed">Jira is a project management and issue tracking tool by Atlassian, widely used in agile software development. It enables teams to plan, track, and manage work with customizable workflows, task assignments, and progress monitoring. Supporting Scrum and Kanban methodologies, Jira enhances productivity and collaboration through robust reporting and integration with other tools.</p>
+                        </div>
+                    </div>
+                </motion.div>
+                <motion.div className="p-4 h-full"
+                whileHover={{ y: -8 }}
+                whileTap={{ scale: 0.9 }}>
+                    <div className="flex relative min-h-80 h-full">
+                        <div className="flex justify-center items-center bg-light absolute inset-0 w-full h-full object-fit object-center rounded-lg overflow-hidden">
+                            <Image 
+                                width={300} 
+                                height={200} 
+                                className="bg-light aspect-w-4 aspect-h-2 max-h-full object-center p-20 rounded-lg" 
+                                alt="gallery" 
+                                src={vscode} 
+                            />
+                         </div>
+                        <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                            <h2 className="tracking-widest text-lg title-font font-medium text-indigo-400 mb-1">Visual Studio Code</h2>
+                            <p className="leading-relaxed">Visual Studio Code (VS Code) is a free, open-source code editor developed by Microsoft. It is widely used for its versatility and support for various programming languages. VS Code offers features like debugging, integrated Git control, syntax highlighting, and extensions, making it a powerful tool for developers. Its lightweight design and extensive customization options enhance productivity and streamline the coding process.</p>
                         </div>
                     </div>
                 </motion.div>

@@ -166,7 +166,7 @@ export const timelineItemsList = [
       title: '15 MARCH 2022',
       courseTitle: 'RWD using Flexbox',
       description:
-        'Learn to develop responsive layouts using CSS Flexbox and CSS Media Queries.',
+        'Learne to develop responsive layouts using CSS Flexbox and CSS Media Queries.',
       duration: '7 days',
       tagsList: [
         {
@@ -203,13 +203,13 @@ export const timelineItemsList = [
       id: '7bc3f006-f0f1-4574-924b-17c480556727',
       categoryId: 'PROJECT',
       title: '20 MARCH 2022',
-      projectTitle: 'Move Messenger',
+      projectTitle: 'Money Manager',
       description:
         'The landing page of Move Messenger gives you a brief intro of Move Messenger. The landing page is responsive enabling to view it across various devices.',
       imageUrl:
-        'https://assets.ccbp.in/frontend/intermediate-rwd/move-messenger-img.png',
+        'https://i.pinimg.com/originals/4b/39/64/4b3964d7e3ccda9546d276c9de8c2e11.jpg',
       duration: '5 hr',
-      projectUrl: 'https://movemessengers.ccbp.tech/',
+      projectUrl: 'https://moneymanprasad.ccbp.tech/',
     },
     {
       id: 'e681e826-260c-4540-9ee5-f53d0e6ecba0',
@@ -217,7 +217,7 @@ export const timelineItemsList = [
       title: '03 MAY 2022',
       courseTitle: 'React JS - Getting Started',
       description:
-        'Learn how to build dynamic web applications with the React JS library. When you finish this course, you will be comfortable in creating a modern, clean, and maintainable application in React JS, from scratch.',
+        'Learned to build dynamic web applications with the React JS library. When you finish this course, you will be comfortable in creating a modern, clean, and maintainable application in React JS, from scratch.',
       duration: '18 days',
       tagsList: [
         {
@@ -245,8 +245,8 @@ export const timelineItemsList = [
           name: 'Routing',
         },
         {
-          id: '94948400-f768-11eb-9a03-0242ac130003',
-          name: 'API Calls',
+          id: '94948342-f768-11eb-9a03-0242ac150003',
+          name: 'Rest APIs',
         },
       ],
     },
@@ -287,18 +287,14 @@ export const timelineItemsList = [
       id: 'e681e826-260c-4540-9ee5-f53d0e6ecba0',
       categoryId: 'COURSE',
       title: 'From 12-09-2022 - Present',
-      courseTitle: 'A new learing  journey with Next.js with an AI twist',
+      courseTitle: 'Journey with Next.js with an AI twist',
       description:
         'Building GRC products using Next.js & React.js. Learning the full potential of Material UI library for design and development. Fixing CI/CD pieplines for smooth flow of development. Realising the potential of AI in software Development',
       duration: 'Since 2022',
       tagsList: [
         {
           id: '94947ad2-f768-11eb-9a03-0242ac150003',
-          name: 'React Hooks',
-        },
-        {
-          id: '94947d52-f768-11eb-9a03-0242ac150003',
-          name: 'React Hook Forms',
+          name: 'React Hooks & React Hook Forms',
         },
         {
           id: '94947e4c-f768-11eb-9a03-0242ac150003',
@@ -313,15 +309,11 @@ export const timelineItemsList = [
           name: 'Jira',
         },
         {
-          id: '94948342-f768-11eb-9a03-0242ac150003',
-          name: 'Rest APIs',
-        },
-        {
           id: '94948400-f768-11eb-9a03-0242ac150003',
           name: 'Figma',
         },
         {
-          id: '94948400-f768-11eb-9a03-0242ac150003',
+          id: '94948400-f768-11eb-8a03-0242ac150003',
           name: 'AI - ChatGPT, GIT Co-Pilot',
         },
         {

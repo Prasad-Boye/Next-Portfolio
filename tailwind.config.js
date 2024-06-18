@@ -5,6 +5,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'xsm': '320px',
+        'sm': '425px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1320px',
+        '2xl': '1444px',
+      },
       fontFamily: {
         mont: ['var(--font-mont)'],
       },
