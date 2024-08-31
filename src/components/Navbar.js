@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import Logo from './Logo';
 import { TwitterIcon, PinterestIcon, GitHubIcon, LinkedinIcon, HamburgerIcon, CloseIcon } from './icons';
 
-const CustomLink = ({ href, title, className = "" , highlight}) => {
+const CustomLink = ({ href, title, className = "" , highlight, onClick}) => {
     const router = useRouter();
     return (
         <>
@@ -20,7 +20,7 @@ const CustomLink = ({ href, title, className = "" , highlight}) => {
                 }
                 >&nbsp;</span>
             </Link> :
-            <Link href={href} className={`${className} relative group w-full ${router.asPath === href ? 'bg-dark p-2 text-light' : 'w-0'}`}>
+            <Link onClick={onClick} href={href} className={`${className} relative group w-full ${router.asPath === href ? 'bg-dark p-2 text-light' : 'w-0'}`}>
                 {title}
             </Link>
             }
@@ -79,43 +79,41 @@ const Navbar = () => {
                 </button>
                 {menuOpen && (
                     <div className="fixed inset-0 bg-gray-800 bg-opacity-75 z-50 flex justify-end">
-                        <div className="bg-white w-64 h-full flex flex-col items-start justify-start pt-16">
-                            <div className='flex items-center absolute top-4 right-4' >
-                                <nav className='flex flex-grow items-center md:hidden mr-10 md:justify-end justify-start flex-wrap'>
-                                    <motion.a href='https://twitter.com/prasad_boya' target='_blank' className={'mr-3 w-5 md:w-7'}
-                                        whileHover={{ y: -2 }}
-                                        whileTap={{ scale: 0.9 }}>
-                                        <TwitterIcon />
-                                    </motion.a>
-                                    <motion.a href='https://www.linkedin.com/in/prasad-boye/' target='_blank' className={'mx-3 w-5 md:w-7'}
-                                        whileHover={{ y: -2 }}
-                                        whileTap={{ scale: 0.9 }}>
-                                        <LinkedinIcon />
-                                    </motion.a>
-                                    <motion.a href='https://github.com/Prasad-Boye' target='_blank' className={'mx-3 w-5 md:w-7'}
-                                        whileHover={{ y: -2 }}
-                                        whileTap={{ scale: 0.9 }}>
-                                        <GitHubIcon />
-                                    </motion.a>
-                                    <motion.a href='https://in.pinterest.com/prasad_boye/' target='_blank' className={'ml-3 w-5 md:w-7'}
-                                        whileHover={{ y: -2 }}
-                                        whileTap={{ scale: 0.9 }}>
-                                        <PinterestIcon />
-                                    </motion.a>
-                                </nav>
-                                <button onClick={toggleMenu} className=" text-gray-800 focus:outline-none">
-                                    <CloseIcon />
-                                </button>
-                            </div>
+    <div className="bg-white w-64 h-full flex flex-col items-start justify-start pt-16">
+        <div className='flex absolute top-4 right-0 items-end justify-end w-full pr-4'>
+            <nav className='flex items-center md:hidden justify-end flex-wrap'>
+                <motion.a href='https://twitter.com/prasad_boya' target='_blank' className={'mr-3 w-5 md:w-7'}
+                    whileHover={{ y: -2 }}
+                    whileTap={{ scale: 0.9 }}>
+                    <TwitterIcon />
+                </motion.a>
+                <motion.a href='https://www.linkedin.com/in/prasad-boye/' target='_blank' className={'mx-3 w-5 md:w-7'}
+                    whileHover={{ y: -2 }}
+                    whileTap={{ scale: 0.9 }}>
+                    <LinkedinIcon />
+                </motion.a>
+                <motion.a href='https://github.com/Prasad-Boye' target='_blank' className={'mx-3 w-5 md:w-7'}
+                    whileHover={{ y: -2 }}
+                    whileTap={{ scale: 0.9 }}>
+                    <GitHubIcon />
+                </motion.a>
+                <motion.a href='https://in.pinterest.com/prasad_boye/' target='_blank' className={'ml-3 w-5 md:w-7'}
+                    whileHover={{ y: -2 }}
+                    whileTap={{ scale: 0.9 }}>
+                    <PinterestIcon />
+                </motion.a>
+            </nav>
+        </div>
 
-                            <nav className="flex flex-col items-start w-full">
-                                <CustomLink href='/' title='Home' className='my-4 px-6' highlight={false} />
-                                <CustomLink href='/about' title='About' className='my-4 px-6' highlight={false}/>
-                                <CustomLink href='/projects' title='Projects' className='my-4 px-6' highlight={false} />
-                                <CustomLink href='/skills' title='Skills' className='my-4 px-6' highlight={false}/>
-                            </nav>
-                        </div>
-                    </div>
+        <nav className="flex flex-col items-start w-full">
+            <CustomLink href='/' title='Home' className='my-4 px-6' highlight={false} onClick={toggleMenu} />
+            <CustomLink href='/about' title='About' className='my-4 px-6' highlight={false} onClick={toggleMenu}/>
+            <CustomLink href='/projects' title='Projects' className='my-4 px-6' highlight={false} onClick={toggleMenu} />
+            <CustomLink href='/skills' title='Skills' className='my-4 px-6' highlight={false} onClick={toggleMenu}/>
+        </nav>
+    </div>
+</div>
+
                 )}
             </div>
             <div className='absolute left-[50%] top-2 translate-x-[-50%]'>

@@ -39,7 +39,7 @@ export default function Home() {
               Hello, I&apos;m <strong>Prasad Boye</strong>, an accomplished full-stack developer committed to transforming concepts into inventive web applications. Take a look at my recent projects and skillset, which demonstrate my proficiency in React.js and web development.
               </p>
               <div className="flex items-center self-start mt-2">
-                <Link href="./SoftwareEngineer.pdf" target="_blank" 
+                <Link href="./SoftwareDeveloper.pdf" target="_blank" 
                 className="flex items-center bg-dark text-light p-2.5 px-6 
                 rounded-lg text-lg font-semibold border-2 border-solid border-transparent
                 hover:bg-light hover:text-dark hover:border-dark"
