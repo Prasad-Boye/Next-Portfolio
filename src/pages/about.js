@@ -258,7 +258,7 @@ function TabsDemo() {
                 <div className="mb-6">
                   <h2 className="text-lg font-bold mb-2">Contribution and Achievements</h2>
                   <ul className="list-disc pl-6">
-                    <li>Resolved <span className="font-bold">200+ issues</span> and developed <span className="font-bold">23 new features</span> within a <span className="font-bold">2-year</span> timeframe upon joining the organization.</li>
+                    <li>Resolved <span className="font-bold">390+ issues</span> and developed <span className="font-bold">23 new features</span> within a <span className="font-bold">2-year</span> timeframe upon joining the organization.</li>
                     <li>Played a pivotal role in <span className="font-bold">optimizing code</span> and ensuring adherence to <span className="font-bold">Prettier ESLint</span> standards for consistent code styling.</li>
                     <li>Closely monitored <span className="font-bold">CI/CD pipelines</span> to ensure smooth integration and deployment processes, facilitating rapid and reliable delivery of code changes.</li>
                     <li>Employed <span className="font-bold">GitLab</span> for version control over the codebase, enabling collaborative development and tracking changes across the team.</li>
@@ -373,7 +373,7 @@ function TabsDemo() {
             <main>
               <AnimatedText text={'Adaptable Software Developer: Mastering Dynamic Challenges'}/>    
             </main>
-            <p className='mt-8 mb-3 text-justify font-semibold text-base'>Hey there, I&apos;m <strong>Prasad Boye</strong>, a space enthusiast who found his passion in software development. With over <strong>2 years</strong> of hands-on experience in <strong>software development</strong> and <strong>3 years</strong> in <strong>design and development</strong>, I&apos;ve journeyed from designing rail simulators to coding robust software solutions.</p>
+            <p className='mt-8 mb-3 text-justify font-semibold text-base'>Hey there, I&apos;m <strong>Prasad Boye</strong>, a space enthusiast who found his passion in software development. With over <strong>2.5 years</strong> of hands-on experience in <strong>software development</strong> and <strong>3 years</strong> in <strong>design and development</strong>, I&apos;ve journeyed from designing rail simulators to coding robust software solutions.</p>
             <p className='mb-3 text-justify font-semibold'>Starting as a Design Engineer, I quickly rose to the role of Senior Design Engineer within one and a half year, showcasing not just technical prowess but also adaptability in challenging scenarios. However, I soon realized the immense potential of software development and made a deliberate shift in my career trajectory.</p>
             <p className='mb-3 text-justify font-semibold'>Transitioning into software development, I&apos;ve honed my skills while completing a comprehensive certification course in MERN stack development. Currently, I thrive as a software developer at MetricStream, where I contribute my expertise in tools like Next.js, React.js, Node.js, and more to develop cutting-edge GRC tools.</p>
             <p className='text-justify mb-3 font-semibold'>With a strong foundation in engineering principles complemented by practical software development experience, I&apos;m poised to tackle complex challenges and make meaningful contributions to any project or team. Let&apos;s connect and create something amazing together!</p>

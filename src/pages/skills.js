@@ -11,6 +11,8 @@ import tailwindLogo from '../../public/images/articles/tailwind_Logo.png'
 import muiLogo from '../../public/images/articles/muiLogo.png'
 import htmlLogo from '../../public/images/articles/HTMLLogo.png'
 import cssLogo from '../../public/images/articles/CSS3_Logo.png'
+import AWS from '../../public/images/articles/AWS.png'
+import git from '../../public/images/articles/git.png'
 import sqlLogo from '../../public/images/articles/SQL_Logo.png'
 import swLogo from '../../public/images/articles/solidworks_logo.png'
 import jenkins from '../../public/images/articles/jenkins.png'
@@ -160,6 +162,37 @@ function skills() {
                         <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
                             <h2 className="tracking-widest text-lg title-font font-medium text-indigo-400 mb-1">CSS3</h2>
                             <p className="leading-relaxed">Cascading Style Sheets language, offers advanced styling capabilities such as gradients, transitions, and animations. With its expanded feature set, CSS3 enables designers to create visually stunning and responsive web designs.</p>
+                        </div>
+                    </div>
+                </motion.div>
+                <motion.div className="p-4 h-full"
+                whileHover={{ y: -8 }}
+                whileTap={{ scale: 0.9 }}>
+                    <div className="flex relative min-h-80 h-full">
+                        <div className="flex justify-center items-center bg-light absolute inset-0 w-full h-full object-fit object-center rounded-lg">
+                            <Image width={300} height={200} className="bg-light aspect-w-16 aspect-h-9 max-h-1/2 object-center p-8 sm:p-4 rounded-lg" alt="gallery" src={AWS} />
+                        </div>
+                        <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                            <h2 className="tracking-widest text-lg title-font font-medium text-indigo-400 mb-1">AWS</h2>
+                            <p className="leading-relaxed">
+                            <span className='font-bold text-light'>AWS Lambda: </span>A serverless compute service that automatically runs code in response to events, allowing developers to focus on writing applications without managing servers. <br />
+                            <span className='font-bold text-light'>AWS EC2: </span>A scalable cloud service that provides virtual computing environments (instances) for hosting applications, enabling users to launch and manage servers with flexible configurations.<br />
+                            <span className='font-bold text-light'>AWS S3: </span>An object storage service that offers secure, scalable, and durable storage for storing and retrieving any amount of data from anywhere on the web.</p>
+                        </div>
+                    </div>
+                </motion.div>
+                <motion.div className="p-4 h-full"
+                whileHover={{ y: -8 }}
+                whileTap={{ scale: 0.9 }}>
+                    <div className="flex relative min-h-80 h-full">
+                        <div className="flex justify-center items-center bg-light absolute inset-0 w-full h-full object-fit object-center rounded-lg">
+                            <Image width={300} height={200} className="bg-light aspect-w-16 aspect-h-9 max-h-1/2 object-center p-16 rounded-lg" alt="gallery" src={git} />
+                        </div>
+                        <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                        <h2 className="tracking-widest text-lg title-font font-medium text-indigo-400 mb-1">GIT</h2>
+                    <p className="leading-relaxed">A distributed version control system that tracks changes in source code during development, allowing multiple developers to collaborate and manage project history with branches, commits, and merges.<br />
+                    <span className='font-bold text-light'>GitHub/GitLab: </span>Cloud-based platforms built on top of Git, providing repositories for code storage, collaboration tools, and integrated version control for development teams.
+                    </p>
                         </div>
                     </div>
                 </motion.div>
