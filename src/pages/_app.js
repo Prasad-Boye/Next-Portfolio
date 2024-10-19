@@ -30,7 +30,7 @@ return (
       <meta property="og:url" content="https://www.linkedin.com/in/prasad-boye/" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <main className="font-mont bg-light w-full min-h-screen">
+    <main className="font-mont bg-light w-full min-h-screen overflow-x-hidden">
       <Navbar/>
       <Component {...pageProps} />
       <Footer/>
